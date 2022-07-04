@@ -1,574 +1,823 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		{% load static %}
-		<title>MA Graphic Studio</title>
+  <head>
+    {% load static %}
+    <title>MA Graphic Studio</title>
 
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap" rel="stylesheet">
-		<link rel="icon" type="image/png" href="{% static 'images/logoweb.png' %}">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="{% static 'assets/css/bootstrap.min.css' %}">
-		<link rel="stylesheet" href="{% static 'assets/font-awesome/css/font-awesome.min.css' %}">		
-		<link rel="stylesheet" href="{% static 'assets/fontawesome/css/all.min.css' %}">	
-		<link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
-		<link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
-		<link rel="stylesheet" href="{% static 'assets/font/stylesheet.css' %}">
-		<link rel="stylesheet" type="text/css" href="{% static 'assets/css/main.css' %}" >
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="{% static 'images/logoweb.png' %}"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'assets/css/bootstrap.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'assets/font-awesome/css/font-awesome.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'assets/fontawesome/css/all.min.css' %}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Istok+Web"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'assets/css/magnific-popup.css' %}"
+    />
+    <link rel="stylesheet" href="{% static 'assets/font/stylesheet.css' %}" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'assets/css/main.css' %}"
+    />
+  </head>
 
-		
-	</head>
+  <body>
+    <div class="loader">
+      <div class="blob-1"></div>
+      <div class="blob-2"></div>
+    </div>
+    <!-- Wrapper -->
+    <section class="head sticky-top" id="header">
+      <div class="wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <header class="header">
+                <div class="inner">
+                  <!-- Logo -->
+                  <a href="#menu" class="nav-bars">
+                    <img
+                      src="{% static 'images/menu_icon.svg' %}"
+                      height="32"
+                      class="img-responsive"
+                      alt="Collapsable Navbar"
+                      id="menu-icon"
+                    />
+                  </a>
+                  <a href="#aboutme" class="logo">
+                    <span class="symbol"
+                      ><img
+                        src="{% static 'images/logo.svg' %}"
+                        alt="Title" /></span
+                    ><span class="title"></span>
+                  </a>
+                </div>
+              </header>
+              <!-- Menu -->
+              <nav id="menu">
+                <h2>Menú</h2>
+                <ul>
+                  <li><a href="#aboutme">Acerca de mí</a></li>
+                  <li><a href="#portfolio">Portafolio</a></li>
+                  <li><a href="#services">Servicios</a></li>
+                  <li><a href="#contact">Contáctame</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<body>
-		<div class = "loader">
-			<div class = "blob-1"></div>
-			<div class = "blob-2"></div>
-		</div>
-		<!-- Wrapper -->
-		<section class="head sticky-top " id="header">
-			<div class="wrapper">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<header class="header">
-								<div class="inner">
-									<!-- Logo -->
-									<a href="#menu"class="nav-bars">
-										<img src="{% static 'images/menu_icon.svg' %}" height="32" class="img-responsive" alt="Collapsable Navbar" id="menu-icon">
-									</a>
-									<a href="#aboutme" class="logo">
-										<span class="symbol"><img src="{% static 'images/logo.svg' %}" alt="Title" /></span><span class="title"></span>
-									</a>
-								</div>
-							</header>
-							<!-- Menu -->
-							<nav id="menu">
-								<h2>Menú</h2>
-								<ul>
-									<li><a href="#aboutme">Acerca de mí</a></li>
-									<li><a href="#portfolio">Portafolio</a></li>
-									<li><a href="#services">Servicios</a></li>
-									<li><a href="#contact">Contáctame</a></li>
-								</ul>
-							</nav>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- Main -->
 
-		<!-- Main -->
-	
-		<section class="main-body"   id="aboutme">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<h1 class="">¡Hola! Me llamo Marifer</h1>
-						<p class="drescription  text-justify">Soy estudiante de <span class="orange">Diseño Gráfico en la Universidad de Sonora.</span> Me considero aficionada del diseño editorial y el cine. En cuanto a cualidades; soy una persona motivada, con iniciativa y muy colaborativa, aprendo muy rápido y sé escuchar.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<h2 class="">Habilidades </h2>
-						<p class="drescription">Como diseñadora gráfica destaco por mi creatividad y versatilidad. No me limito a un sólo tipo de estilo, me adapto al cliente y sus necesidades. Cuento con un nivel avanzado en cuanto a herramientas de diseño, tales como Adobe Ilustrator y Photoshop. Siempre al tanto de nuevas tendencias.</p>
-					</div>
-					<div class="col-md-12 col-xs-12" style="
-					margin-top: 20px;">
-						<ul class="list-inline dev-icons">
-							<li class="list-inline-item"><img height="50px" src="{% static 'images/ai.svg' %}" alt=""></li>
-							<li class="list-inline-item"><img height="50px" src="{% static 'images/ps.svg' %}" alt=""></li>
-							<li class="list-inline-item"><img height="50px" src="{% static 'images/id.svg' %}" alt=""></li>
-						</ul>
-													
-					</div>
-				</div>
-				<div class="tiles" id="portfolio">
-					<h2 class="pb-2 border-bottom" style="
-					margin-top: 80px;">Portafolio</h2>
-					<div class="row">
-						<div class="col-md-4">
-							<div class="a">
-								<a href="#test-popup-1" class="open-popup-link">
-									<img src="{% static 'images/1.png' %}" class="img-responsive" alt="Responsive image">
-									<div class="img-hover glass">
-										<div class="c-table">
-											<div class="ct-cell">
-												<h3 class="img-title">Paso a Paso</h3>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div id="test-popup-1" class="white-popup mfp-hide">
-							  	<div class="container-fluid">
-									<div class="row">
-										<div class="pop-up-color">
-											<div class="col-md-8 p-l-0 p-r-0">
-												<img src="{% static 'images/1.png' %}" class="img-responsive" alt="Responsive image">
-											</div>
-											<div class="col-md-4">
-												<div>
-													<h2 class="popup-head">Paso a Paso</h2>
-												</div>
-												<div>
-													<p class="popup-parapraph"><span class="orange">Comisión</span> para un centro de fisioterapia dirigido a niños y bebés. La clienta solicitó que este logotipo fuera amistoso y colorido. En base a las especificaciones, utilicé una tipografía tipo curva ya que esta forma suele ser reconfortante y da una sensación de accesibilidad. Al ser un centro infantil, los colores seleccionados fueron tonos pasteles; estos crean una atmósfera tranquila y de confianza.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="a">
-								<a href="#test-popup-9" class="open-popup-link">
-									<img src="{% static 'images/3.png' %}" class="img-responsive" alt="Responsive image">
-									<div class="img-hover glass1">
-										<div class="c-table">
-											<div class="ct-cell">
-												<h3 class="img-title">Zona Medic</h3>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div id="test-popup-9" class="white-popup mfp-hide">
-							  	<div class="container-fluid">
-									<div class="row">
-										<div class="pop-up-color">
-											<div class="col-md-8 p-l-0 p-r-0">
-												<img src="{% static 'images/3.png' %}" class="img-responsive" alt="Responsive image">
-											</div>
-											<div class="col-md-4">
-												<div>
-													<h2 class="popup-head">Zona Medic</h2>
-												</div>
-												<div>
-													<p class="popup-parapraph"><span class="orange">Comisión</span> para un centro de salud, el cual cuenta con servicios como medicina general, pediatría, laboratorios, etc. Se crearon 4 símbolos básicos que representan cada una de las ramas anteriormente mencionadas. La tipografía es lineal, generando una apariencia madura y profesional. El símbolo puede usarse individualmente ya que no es dependiente del logotipo. El color azul se ve asociado a la limpieza y la responsabilidades, aptitudes fundamentales en un centro de salud.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="a">
-								<a href="#test-popup-2" class="open-popup-link">
-									<img src="{% static 'images/7.png' %}" class="img-responsive" alt="Responsive image">
-									<div class="img-hover shoes-glass">
-										<div class="c-table">
-											<div class="ct-cell">
-												<h3 class="img-title">Veta</h3>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div id="test-popup-2" class="white-popup mfp-hide">
-							  	<div class="container-fluid">
-									<div class="row">
-										<div class="pop-up-color">
-											<div class="col-md-8 p-l-0 p-r-0">
-												<img src="{% static 'images/7.png' %}" class="img-responsive" alt="Responsive image">
-											</div>
-											<div class="col-md-4">
-												<div>
-													<h2 class="popup-head">Veta</h2>
-												</div>
-												<div>
-													<p class="popup-parapraph"><span class="orange">Proyecto escolar</span> en el que se pretendía renovar el logotipo original de la empresa. Este negocio está orientado a la venta de artículos de papelería y arte. El problema del logotipo original es que no representaba el giro de la empresa, tampoco funcionaba para atrapar la atención de su mercado y su legibilidad era difícil al igual que su reproducción. En base a su competencia y clientela, se seleccionó un logotipo con letras curveadas. Al ser estudiantes los consumidores principales, se necesita una tipografía accesible y juvenil.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div><br>
-					<div class="row">
-						<div class="col-md-4">
-							<div class="a">
-								<a href="#test-popup-3" class="open-popup-link">
-									<img src="{% static 'images/2.png' %}" class="img-responsive" alt="Responsive image">
-									<div class="img-hover hand-parts">
-										<div class="c-table">
-											<div class="ct-cell">
-												<h3 class="img-title">Aura</h3>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div id="test-popup-3" class="white-popup mfp-hide">
-							  	<div class="container-fluid">
-									<div class="row">
-										<div class="pop-up-color">
-											<div class="col-md-8 p-l-0 p-r-0">
-												<img src="{% static 'images/2.png' %}" class="img-responsive" alt="Responsive image">
-											</div>
-											<div class="col-md-4">
-												<div>
-													<h2 class="popup-head">Aura</h2>
-												</div>
-												<div>
-													<p class="popup-parapraph">Este fue un <span class="orange">Proyecto escolar</span>. Se solicitó la creación de un logotipo para una agencia de arquitectura. Se utilizaron formas muy básicas, haciendo alusión a la geometría. La paleta de colores se basa en los colores primarios con un tono más opaco, pues da una sensación de madurez. El rubro tiene una tipografía más ágil y fluida, la cual hace contraste con los lados rígidos del símbolo. El propósito de este logotipo es que tuviera una apariencia contemporánea.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="a">
-								<a href="#test-popup-4" class="open-popup-link">
-									<img src="{% static 'images/4.png' %}" class="img-responsive" alt="Responsive image">
-									<div class="img-hover table-with-phone">
-										<div class="c-table">
-											<div class="ct-cell">
-												<h3 class="img-title">Lemurs</h3>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div id="test-popup-4" class="white-popup mfp-hide">
-							  	<div class="container-fluid">
-									<div class="row">
-										<div class="pop-up-color">
-											<div class="col-md-8 p-l-0 p-r-0">
-												<img src="{% static 'images/4.png' %}" class="img-responsive" alt="Responsive image">
-											</div>
-											<div class="col-md-4">
-												<div>
-													<h2 class="popup-head">Lemurs</h2>
-												</div>
-												<div>
-													<p class="popup-parapraph">Este fue un <span class="orange">Proyecto escolar</span>. El cliente pertenece a un equipo deportivo de taekwondo, su mascota era un lémur y tenía que estar presente en el logotipo. Para este proyecto, un isologo era la opción más viable, pues no funcionan por separado ni el título ni el símbolo. El color amarillo funciona como color tónico ya que le da vida al contorno de la forma. Así mismo, la tipografía contrasta con el color café, y al ser un degradado no es agresivo para la vista.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="a">
-								<a href="#test-popup-5" class="open-popup-link">
-									<img src="{% static 'images/8.png' %}" class="img-responsive" alt="Responsive image">
-									<div class="img-hover orange-shoe">
-										<div class="c-table">
-											<div class="ct-cell">
-												<h3 class="img-title">Prestare</h3>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div id="test-popup-5" class="white-popup mfp-hide">
-							  	<div class="container-fluid">
-									<div class="row ">
-										<div class="pop-up-color">
-											<div class="col-md-8 p-l-0 p-r-0">
-												<img src="{% static 'images/8.png' %}" class="img-responsive" alt="Responsive image">
-											</div>
-											<div class="col-md-4">
-												<div>
-													<h2 class="popup-head">Prestare</h2>
-												</div>
-												<div>
-													<p class="popup-parapraph">Comisión para una página web de gestión de préstamos. La única solicitud del cliente fue que el símbolo representara la acción de recibir y regresar. En base a esto se seleccionó un símbolo que hace alusión al infinito. La paleta de colores contiene tonos fríos; el color verde representa crecimiento y abundancia, el azul se asocia a la responsabilidad y orden. Esta paleta refleja la imagen que quiere dar la empresa, al igual que los valores que se esperan de los clientes.  Tanto símbolo como tipografía pueden funcionar por separado.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div><br>
-					<div class="row ">
-						<div class="col-md-4">
-							<div class="a">
-								<a href="#test-popup-6" class="open-popup-link">
-									<img src="{% static 'images/5.png' %}" class="img-responsive" alt="Responsive image">
-									<div class="img-hover glass-shoes">
-										<div class="c-table">
-											<div class="ct-cell">
-												<h3 class="img-title">Publicidad</h3>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div id="test-popup-6" class="white-popup mfp-hide">
-							  	<div class="container-fluid">
-									<div class="row">
-										<div class="pop-up-color">
-											<div class="col-md-8 p-l-0 p-r-0">
-												<img src="{% static 'images/5.png' %}" class="img-responsive img-popup" alt="Responsive image">
-											</div>
-											<div class="col-md-4">
-												<div>
-													<h2 class="popup-head">Publicidad</h2>
-												</div>
-												<div>
-													<p class="popup-parapraph">Asignatura escolar en la que se buscaba crear un cartel de publicidad social. El cliente era una empresa de maquillaje que buscaba promover su marca a través de un mensaje incluyente. Se utilizaron tonalidades tierra para alcanzar una sensación de naturalidad.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="a">
-								<a href="#test-popup-7" class="open-popup-link">
-									<img src="{% static 'images/6.png' %}" class="img-responsive" alt="Responsive image">
-									<div class="img-hover girls-tops">
-										<div class="c-table">
-											<div class="ct-cell">
-												<h3 class="img-title">Ilustración</h3>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div id="test-popup-7" class="white-popup mfp-hide">
-							  	<div class="container-fluid">
-									<div class="row">
-										<div class="pop-up-color">
-											<div class="col-md-8 p-l-0 p-r-0">
-												<img src="{% static 'images/6.png' %}" class="img-responsive img-popup" alt="Responsive image">
-											</div>
-											<div class="col-md-4">
-												<div>
-													<h2 class="popup-head">Ilustración</h2>
-												</div>
-												<div>
-													<p class="popup-parapraph">Retrato detallado elaborado en Adobe Illustrator. Se jugó con distintas herramientas para replicar el volumen y la textura de la piel.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="a">
-								<a href="#test-popup-8" class="open-popup-link">
-									<img src="{% static 'images/9.png' %}" class="img-responsive" alt="Responsive image">
-									<div class="img-hover egg-arts">
-										<div class="c-table">
-											<div class="ct-cell">
-												<h3 class="img-title">Cartel</h3>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div id="test-popup-8" class="white-popup mfp-hide">
-							  	<div class="container-fluid">
-									<div class="row">
-										<div class="pop-up-color">
-											<div class="col-md-8 p-l-0 p-r-0">
-												<img src="{% static 'images/9.png' %}" class="img-responsive img-popup" alt="Responsive image">
-											</div>
-											<div class="col-md-4">
-												<div>
-													<h2 class="popup-head">Cartel</h2>
-												</div>
-												<div>
-													<p class="popup-parapraph">Cartel elaborado para el día internacional de la mujer realizado en Photoshop. El color principal es el morado ya que representa el movimiento feminista. Se experimentó con herramientas distintas ya que era un cartel inspirado en la técnica del collage.</p>
-												</div>												
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+    <section class="main-body" id="aboutme">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="">¡Hola! Me llamo Marifer</h1>
+            <p class="drescription text-justify">
+              Soy estudiante de
+              <span class="orange"
+                >Diseño Gráfico en la Universidad de Sonora.</span
+              >
+              Me considero aficionada del diseño editorial y el cine. En cuanto
+              a cualidades; soy una persona motivada, con iniciativa y muy
+              colaborativa, aprendo muy rápido y sé escuchar.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="">Habilidades</h2>
+            <p class="drescription">
+              Como diseñadora gráfica destaco por mi creatividad y versatilidad.
+              No me limito a un sólo tipo de estilo, me adapto al cliente y sus
+              necesidades. Cuento con un nivel avanzado en cuanto a herramientas
+              de diseño, tales como Adobe Ilustrator y Photoshop. Siempre al
+              tanto de nuevas tendencias.
+            </p>
+          </div>
+          <div class="col-md-12 col-xs-12" style="margin-top: 20px">
+            <ul class="list-inline dev-icons">
+              <li class="list-inline-item">
+                <img height="50px" src="{% static 'images/ai.svg' %}" alt="" />
+              </li>
+              <li class="list-inline-item">
+                <img height="50px" src="{% static 'images/ps.svg' %}" alt="" />
+              </li>
+              <li class="list-inline-item">
+                <img height="50px" src="{% static 'images/id.svg' %}" alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tiles" id="portfolio">
+          <h2 class="pb-2 border-bottom" style="margin-top: 80px">
+            Portafolio
+          </h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="a">
+                <a href="#test-popup-1" class="open-popup-link">
+                  <img
+                    src="{% static 'images/1.png' %}"
+                    class="img-responsive"
+                    alt="Responsive image"
+                  />
+                  <div class="img-hover glass">
+                    <div class="c-table">
+                      <div class="ct-cell">
+                        <h3 class="img-title">Paso a Paso</h3>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div id="test-popup-1" class="white-popup mfp-hide">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="pop-up-color">
+                      <div class="col-md-8 p-l-0 p-r-0">
+                        <img
+                          src="{% static 'images/1.png' %}"
+                          class="img-responsive"
+                          alt="Responsive image"
+                        />
+                      </div>
+                      <div class="col-md-4">
+                        <div>
+                          <h2 class="popup-head">Paso a Paso</h2>
+                        </div>
+                        <div>
+                          <p class="popup-parapraph">
+                            <span class="orange">Comisión</span> para un centro
+                            de fisioterapia dirigido a niños y bebés. La clienta
+                            solicitó que este logotipo fuera amistoso y
+                            colorido. En base a las especificaciones, utilicé
+                            una tipografía tipo curva ya que esta forma suele
+                            ser reconfortante y da una sensación de
+                            accesibilidad. Al ser un centro infantil, los
+                            colores seleccionados fueron tonos pasteles; estos
+                            crean una atmósfera tranquila y de confianza.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="a">
+                <a href="#test-popup-9" class="open-popup-link">
+                  <img
+                    src="{% static 'images/3.png' %}"
+                    class="img-responsive"
+                    alt="Responsive image"
+                  />
+                  <div class="img-hover glass1">
+                    <div class="c-table">
+                      <div class="ct-cell">
+                        <h3 class="img-title">Zona Medic</h3>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div id="test-popup-9" class="white-popup mfp-hide">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="pop-up-color">
+                      <div class="col-md-8 p-l-0 p-r-0">
+                        <img
+                          src="{% static 'images/3.png' %}"
+                          class="img-responsive"
+                          alt="Responsive image"
+                        />
+                      </div>
+                      <div class="col-md-4">
+                        <div>
+                          <h2 class="popup-head">Zona Medic</h2>
+                        </div>
+                        <div>
+                          <p class="popup-parapraph">
+                            <span class="orange">Comisión</span> para un centro
+                            de salud, el cual cuenta con servicios como medicina
+                            general, pediatría, laboratorios, etc. Se crearon 4
+                            símbolos básicos que representan cada una de las
+                            ramas anteriormente mencionadas. La tipografía es
+                            lineal, generando una apariencia madura y
+                            profesional. El símbolo puede usarse individualmente
+                            ya que no es dependiente del logotipo. El color azul
+                            se ve asociado a la limpieza y la responsabilidades,
+                            aptitudes fundamentales en un centro de salud.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="a">
+                <a href="#test-popup-2" class="open-popup-link">
+                  <img
+                    src="{% static 'images/7.png' %}"
+                    class="img-responsive"
+                    alt="Responsive image"
+                  />
+                  <div class="img-hover shoes-glass">
+                    <div class="c-table">
+                      <div class="ct-cell">
+                        <h3 class="img-title">Veta</h3>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div id="test-popup-2" class="white-popup mfp-hide">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="pop-up-color">
+                      <div class="col-md-8 p-l-0 p-r-0">
+                        <img
+                          src="{% static 'images/7.png' %}"
+                          class="img-responsive"
+                          alt="Responsive image"
+                        />
+                      </div>
+                      <div class="col-md-4">
+                        <div>
+                          <h2 class="popup-head">Veta</h2>
+                        </div>
+                        <div>
+                          <p class="popup-parapraph">
+                            <span class="orange">Proyecto escolar</span> en el
+                            que se pretendía renovar el logotipo original de la
+                            empresa. Este negocio está orientado a la venta de
+                            artículos de papelería y arte. El problema del
+                            logotipo original es que no representaba el giro de
+                            la empresa, tampoco funcionaba para atrapar la
+                            atención de su mercado y su legibilidad era difícil
+                            al igual que su reproducción. En base a su
+                            competencia y clientela, se seleccionó un logotipo
+                            con letras curveadas. Al ser estudiantes los
+                            consumidores principales, se necesita una tipografía
+                            accesible y juvenil.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-md-4">
+              <div class="a">
+                <a href="#test-popup-3" class="open-popup-link">
+                  <img
+                    src="{% static 'images/2.png' %}"
+                    class="img-responsive"
+                    alt="Responsive image"
+                  />
+                  <div class="img-hover hand-parts">
+                    <div class="c-table">
+                      <div class="ct-cell">
+                        <h3 class="img-title">Aura</h3>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div id="test-popup-3" class="white-popup mfp-hide">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="pop-up-color">
+                      <div class="col-md-8 p-l-0 p-r-0">
+                        <img
+                          src="{% static 'images/2.png' %}"
+                          class="img-responsive"
+                          alt="Responsive image"
+                        />
+                      </div>
+                      <div class="col-md-4">
+                        <div>
+                          <h2 class="popup-head">Aura</h2>
+                        </div>
+                        <div>
+                          <p class="popup-parapraph">
+                            Este fue un
+                            <span class="orange">Proyecto escolar</span>. Se
+                            solicitó la creación de un logotipo para una agencia
+                            de arquitectura. Se utilizaron formas muy básicas,
+                            haciendo alusión a la geometría. La paleta de
+                            colores se basa en los colores primarios con un tono
+                            más opaco, pues da una sensación de madurez. El
+                            rubro tiene una tipografía más ágil y fluida, la
+                            cual hace contraste con los lados rígidos del
+                            símbolo. El propósito de este logotipo es que
+                            tuviera una apariencia contemporánea.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="a">
+                <a href="#test-popup-4" class="open-popup-link">
+                  <img
+                    src="{% static 'images/4.png' %}"
+                    class="img-responsive"
+                    alt="Responsive image"
+                  />
+                  <div class="img-hover table-with-phone">
+                    <div class="c-table">
+                      <div class="ct-cell">
+                        <h3 class="img-title">Lemurs</h3>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div id="test-popup-4" class="white-popup mfp-hide">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="pop-up-color">
+                      <div class="col-md-8 p-l-0 p-r-0">
+                        <img
+                          src="{% static 'images/4.png' %}"
+                          class="img-responsive"
+                          alt="Responsive image"
+                        />
+                      </div>
+                      <div class="col-md-4">
+                        <div>
+                          <h2 class="popup-head">Lemurs</h2>
+                        </div>
+                        <div>
+                          <p class="popup-parapraph">
+                            Este fue un
+                            <span class="orange">Proyecto escolar</span>. El
+                            cliente pertenece a un equipo deportivo de
+                            taekwondo, su mascota era un lémur y tenía que estar
+                            presente en el logotipo. Para este proyecto, un
+                            isologo era la opción más viable, pues no funcionan
+                            por separado ni el título ni el símbolo. El color
+                            amarillo funciona como color tónico ya que le da
+                            vida al contorno de la forma. Así mismo, la
+                            tipografía contrasta con el color café, y al ser un
+                            degradado no es agresivo para la vista.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="a">
+                <a href="#test-popup-5" class="open-popup-link">
+                  <img
+                    src="{% static 'images/8.png' %}"
+                    class="img-responsive"
+                    alt="Responsive image"
+                  />
+                  <div class="img-hover orange-shoe">
+                    <div class="c-table">
+                      <div class="ct-cell">
+                        <h3 class="img-title">Prestare</h3>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div id="test-popup-5" class="white-popup mfp-hide">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="pop-up-color">
+                      <div class="col-md-8 p-l-0 p-r-0">
+                        <img
+                          src="{% static 'images/8.png' %}"
+                          class="img-responsive"
+                          alt="Responsive image"
+                        />
+                      </div>
+                      <div class="col-md-4">
+                        <div>
+                          <h2 class="popup-head">Prestare</h2>
+                        </div>
+                        <div>
+                          <p class="popup-parapraph">
+                            Comisión para una página web de gestión de
+                            préstamos. La única solicitud del cliente fue que el
+                            símbolo representara la acción de recibir y
+                            regresar. En base a esto se seleccionó un símbolo
+                            que hace alusión al infinito. La paleta de colores
+                            contiene tonos fríos; el color verde representa
+                            crecimiento y abundancia, el azul se asocia a la
+                            responsabilidad y orden. Esta paleta refleja la
+                            imagen que quiere dar la empresa, al igual que los
+                            valores que se esperan de los clientes. Tanto
+                            símbolo como tipografía pueden funcionar por
+                            separado.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-md-4">
+              <div class="a">
+                <a href="#test-popup-6" class="open-popup-link">
+                  <img
+                    src="{% static 'images/5.png' %}"
+                    class="img-responsive"
+                    alt="Responsive image"
+                  />
+                  <div class="img-hover glass-shoes">
+                    <div class="c-table">
+                      <div class="ct-cell">
+                        <h3 class="img-title">Publicidad</h3>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div id="test-popup-6" class="white-popup mfp-hide">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="pop-up-color">
+                      <div class="col-md-8 p-l-0 p-r-0">
+                        <img
+                          src="{% static 'images/5.png' %}"
+                          class="img-responsive img-popup"
+                          alt="Responsive image"
+                        />
+                      </div>
+                      <div class="col-md-4">
+                        <div>
+                          <h2 class="popup-head">Publicidad</h2>
+                        </div>
+                        <div>
+                          <p class="popup-parapraph">
+                            Asignatura escolar en la que se buscaba crear un
+                            cartel de publicidad social. El cliente era una
+                            empresa de maquillaje que buscaba promover su marca
+                            a través de un mensaje incluyente. Se utilizaron
+                            tonalidades tierra para alcanzar una sensación de
+                            naturalidad.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="a">
+                <a href="#test-popup-7" class="open-popup-link">
+                  <img
+                    src="{% static 'images/6.png' %}"
+                    class="img-responsive"
+                    alt="Responsive image"
+                  />
+                  <div class="img-hover girls-tops">
+                    <div class="c-table">
+                      <div class="ct-cell">
+                        <h3 class="img-title">Ilustración</h3>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div id="test-popup-7" class="white-popup mfp-hide">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="pop-up-color">
+                      <div class="col-md-8 p-l-0 p-r-0">
+                        <img
+                          src="{% static 'images/6.png' %}"
+                          class="img-responsive img-popup"
+                          alt="Responsive image"
+                        />
+                      </div>
+                      <div class="col-md-4">
+                        <div>
+                          <h2 class="popup-head">Ilustración</h2>
+                        </div>
+                        <div>
+                          <p class="popup-parapraph">
+                            Retrato detallado elaborado en Adobe Illustrator. Se
+                            jugó con distintas herramientas para replicar el
+                            volumen y la textura de la piel.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="a">
+                <a href="#test-popup-8" class="open-popup-link">
+                  <img
+                    src="{% static 'images/9.png' %}"
+                    class="img-responsive"
+                    alt="Responsive image"
+                  />
+                  <div class="img-hover egg-arts">
+                    <div class="c-table">
+                      <div class="ct-cell">
+                        <h3 class="img-title">Cartel</h3>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div id="test-popup-8" class="white-popup mfp-hide">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="pop-up-color">
+                      <div class="col-md-8 p-l-0 p-r-0">
+                        <img
+                          src="{% static 'images/9.png' %}"
+                          class="img-responsive img-popup"
+                          alt="Responsive image"
+                        />
+                      </div>
+                      <div class="col-md-4">
+                        <div>
+                          <h2 class="popup-head">Cartel</h2>
+                        </div>
+                        <div>
+                          <p class="popup-parapraph">
+                            Cartel elaborado para el día internacional de la
+                            mujer realizado en Photoshop. El color principal es
+                            el morado ya que representa el movimiento feminista.
+                            Se experimentó con herramientas distintas ya que era
+                            un cartel inspirado en la técnica del collage.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-body" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="container px-4 py-5" id="hanging-icons">
+            <h2 class="pb-2 border-bottom">Servicios</h2>
+            <div
+              class="row g-4 py-5 row-cols-1 row-cols-lg-3"
+              style="padding-left: 15px"
+            >
+              <div
+                class="col d-flex align-items-start"
+                style="padding-left: 0px"
+              >
+                <div class="icon-square flex-shrink-0 me-3">
+                  <i class="fa fa-copyright" style="font-size: 35px"></i>
+                </div>
+                <div>
+                  <h2 class="service-title">Branding</h2>
+                  <p class="service-text">
+                    Creación del símbolo marcario. Se acompaña con distintos
+                    mock-ups basados en el giro de la empresa. Se provee también
+                    la paleta de colores al igual que la tipografía utilizada.
+                  </p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div class="icon-square flex-shrink-0 me-3">
+                  <i class="fa fa-fill" style="font-size: 35px"></i>
+                </div>
+                <div>
+                  <h2 class="service-title">Ilustrado</h2>
+                  <p class="service-text">
+                    Comisiones sencillas hasta detalladas. Desde ilustraciones
+                    sin gran cantidad de facciones faciales con una paleta de
+                    colores limitada, hasta retratos detallados.
+                  </p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div class="icon-square flex-shrink-0 me-3">
+                  <i class="fa fa-bullhorn" style="font-size: 35px"></i>
+                </div>
+                <div>
+                  <h2 class="service-title">Publicidad</h2>
+                  <p class="service-text">
+                    Carteles digitales enfocados en la promocion y difusión de
+                    un producto o servicio, orientados a contenidos de redes
+                    sociales o publicidad digital.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h1>Contáctame</h1>
 
-		</section>
-		<section class="main-body" id="services">
-			<div class="container">
-				<div class="row">
-					
-					<div class="container px-4 py-5" id="hanging-icons">
-						<h2 class="pb-2 border-bottom">Servicios</h2>
-						<div class="row g-4 py-5 row-cols-1 row-cols-lg-3" style="
-						padding-left: 15px;">
-						  <div class="col d-flex align-items-start" style="
-						  padding-left: 0px;">
-							<div class="icon-square  flex-shrink-0 me-3">
-							  <i class="fa fa-copyright " style="font-size:35px;"></i>
-							</div>
-							<div>
-							  <h2 class="service-title">Branding</h2>
-							  <p class="service-text">Creación del símbolo marcario.  Se acompaña con distintos mock-ups basados en el giro de la empresa. Se provee también la paleta de colores al igual que la tipografía utilizada.</p>
-							</div>
-						  </div>
-						  <div class="col d-flex align-items-start">
-							<div class="icon-square flex-shrink-0 me-3">
-								<i class="fa fa-fill" style="font-size:35px;"></i>
-							</div>
-							<div>
-							  <h2 class="service-title">Ilustrado</h2>
-							  <p class="service-text">Comisiones sencillas hasta detalladas. Desde ilustraciones  sin gran cantidad de facciones faciales con una paleta de colores limitada, hasta retratos detallados.</p>
-							  
-							</div>
-						  </div>
-						  <div class="col d-flex align-items-start">
-							<div class="icon-square flex-shrink-0 me-3">
-								<i class="fa fa-bullhorn" style="font-size:35px;"></i>
-							</div>
-							<div>
-							  <h2 class="service-title">Publicidad</h2>
-							  <p class="service-text">Carteles digitales enfocados en la promocion y difusión de un producto o servicio, orientados a contenidos de redes sociales o publicidad digital.</p>
-							  
-							</div>
-						  </div>
-						</div>
-					  </div>
-				</div>
-			</div>
-		</section>
-		<section class="contact" id="contact">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8">
-						<h1>Contáctame</h1>
-						
-						{% if 'ok' in request.GET %}
-							<p class="text-success">Su mensaje se envió correctamente.</p>
-            			{% endif %}  
+            {% if 'ok' in request.GET %}
+            <p class="text-success">Su mensaje se envió correctamente.</p>
+            {% endif %} {% if 'fail' in request.GET %}
+            <p class="text-danger">Su mensaje no se envió correctamente.</p>
+            {% endif %}
+            <form action="" id="form" method="POST">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">{{contact_form.name}}</div>
+                  {{ contact_form.name.errors }}
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">{{contact_form.email}}</div>
+                  {{ contact_form.name.errors }}
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="from-group">{{contact_form.message}}</div>
+                  {{ contact_form.name.errors }}
+                </div>
+              </div>
+              <div class="form-group" align="right">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <input
+                    type="submit"
+                    class="btn btn-tobais btn-send-2"
+                    value="ENVIAR"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <h1>Información de contácto</h1>
+            <p class="contact-desc">
+              El uso de este correo electrónico es exclusivo para fines de
+              contacto profesionales, cualquier correo que sea con cualquier
+              otro motivo sera ignorado.
+            </p>
+            <p>
+              <strong>Correo electrónico: </strong
+              >magraphicstudio.contact@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            			{% if 'fail' in request.GET %}
-              				<p class="text-danger">Su mensaje no se envió correctamente.</p>
-            			{% endif %} 
-							<form action="" id="form" method="POST">
-								{% csrf_token %}
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group">
-											{{contact_form.name}}
-										</div>
-										{{ contact_form.name.errors }}
-									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											{{contact_form.email}}
-										</div>
-										{{ contact_form.name.errors }}
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="from-group">
-											{{contact_form.message}}
-										</div>
-										{{ contact_form.name.errors }}
-									</div>
-								</div>
-								<div class="form-group"  align="right">
-									<div class="col-sm-offset-2 col-sm-10">
-									  <input type="submit" class="btn btn-tobais btn-send-2" value="ENVIAR">
-									</div>
-								</div>
-							</form>
-							
-						</div>
-					<div class="col-md-4">
-						<h1>Información de contácto</h1>
-							<p class="contact-desc">
-								El uso de este correo electrónico es exclusivo para fines de contacto profesionales, cualquier correo que sea con cualquier otro motivo sera ignorado. 
-							</p>					
-							<p><Strong>Correo electrónico: </Strong>magraphicstudio.contact@gmail.com</p>						
-					</div>
-				</div>				
-			</div>
-		</section>
+    <section class="social-contact-icon">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-xs-12">
+            <ul class="text-center social-contact">
+              <li class="social-icons">
+                <a href="#" class="icon style2 fa-facebook"
+                  ><span class="label">Facebook</span></a
+                >
+              </li>
+              <li class="social-icons">
+                <a
+                  href="https://www.instagram.com/mari.fury/"
+                  class="icon style2 fa-instagram"
+                  ><span class="label">Instagram</span></a
+                >
+              </li>
+              <li class="social-icons">
+                <a href="#" class="icon style2 fa-twitter"
+                  ><span class="label">Twitter</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<section class="social-contact-icon">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 col-xs-12">
-						<ul class="text-center social-contact">
-							<li class="social-icons">
-							<a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a>
-							</li>
-							<li class="social-icons">
-								<a href="https://www.instagram.com/mari.fury/" class="icon style2 fa-instagram"><span class="label">Instagram</span></a>
-							</li>
-							<li class="social-icons">
-								<a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a>
-							</li>
-						</ul>							
-					</div>
-				</div>
-			</div>
-		</section>
+    <section class="footer">
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-xs-9">
+              <p class="right-color">
+                &copy; By<a href="https://github.com/rrasconc" target="_blank">
+                  rrasconc</a
+                >
+              </p>
+            </div>
+            <div class="col-sm-4 col-xs-3" align="right">
+              <a href="#" id="back-to-top" class="top text-right"
+                >TOP <i class="fa fa-angle-up" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
 
-		<section class="footer">		
-			<footer>
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-8 col-xs-9">
-							<p class="right-color">&copy; By<a href="https://github.com/RigobertoRascon" target="_blank"> RigobertoRascon</a></p>
-						</div>
-						<div class="col-sm-4 col-xs-3" align="right">
-							<a href="#" id="back-to-top" class="top text-right" >TOP <i class="fa fa-angle-up" aria-hidden="true"></i> </a>
-						</div>
-					</div>
-				</div>											
-			</footer>
-		</section>
-		
+    <!-- Scripts -->
+    <script src="{% static 'assets/js/jquery-3.1.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
 
-	<!-- Scripts -->
-		<script src="{% static 'assets/js/jquery-3.1.0.min.js' %}"></script>
-		<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
-		<script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'assets/js/script.js' %}"></script>
+    <script>
+      $(document).ready(function () {
+        function hidePreloader() {
+          $(".loader").delay(1000).fadeOut(1000);
+        }
 
-		<script src="{% static 'assets/js/script.js' %}"></script>
-		<script>
-			$(document).ready(function() {
-
-				function hidePreloader() {
-				$('.loader').delay(1000).fadeOut(1000);
-				}
-				
-				hidePreloader();
-			});
-			$('#form').submit(function(){
-				$('.loader').show();
-			})
-			
-		</script>
-		<script>
-			$(window).on("load", function(){
-				$(".loader").fadeOut("slow");
-			})
-			$('')
-		</script>
-		<!--  ===== Scroll to Top ====  -->
-	    <script>
-			if ($('#back-to-top').length) {
-			    $('#back-to-top').on('click', function (e) {
-			        e.preventDefault();
-			        $('html,body').animate({
-			            scrollTop: 0
-			        }, 700);
-			    });
-			}
-		</script>
-		
-	</body>
+        hidePreloader();
+      });
+      $("#form").submit(function () {
+        $(".loader").show();
+      });
+    </script>
+    <script>
+      $(window).on("load", function () {
+        $(".loader").fadeOut("slow");
+      });
+      $("");
+    </script>
+    <!--  ===== Scroll to Top ====  -->
+    <script>
+      if ($("#back-to-top").length) {
+        $("#back-to-top").on("click", function (e) {
+          e.preventDefault();
+          $("html,body").animate(
+            {
+              scrollTop: 0,
+            },
+            700
+          );
+        });
+      }
+    </script>
+  </body>
 </html>
