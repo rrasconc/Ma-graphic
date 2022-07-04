@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+		{% load static %}
+		<title>MA Graphic Studio</title>
+		<link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap" rel="stylesheet">
+		<link rel="icon" type="image/png" href="{% static 'images/logoweb.png' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'assets/css/404.css' %}" >
+	</head>
+</head>
+<body>
+    <div class="container">
+        <h1 class="first-four">4</h1>        
+        <div class="cog-wheel2"> 
+          <a href="{% url 'index' %}"><div class="cog2"></div></a>
+        </div>
+       <h1 class="second-four">4</h1>
+        <h2 class="wrong-para">Oh no! Página no encontrada! <br>  Da click en la cara triste para regresar.</h2>
+      </div>
+      <div class = "loader">
+        <div class = "blob-1"></div>
+        <div class = "blob-2"></div>
+      </div>
+      <script src="{% static 'assets/js/jquery-3.1.0.min.js' %}"></script>
+      <script>
+        $(document).ready(function() {
+  
+          function hidePreloader() {
+          $('.loader').delay(1000).fadeOut(1000);
+          }
+          
+          hidePreloader();
+        });
+      </script>
+</body>
+
+</html>
